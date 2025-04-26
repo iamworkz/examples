@@ -1,0 +1,3 @@
+rootProject.name = 'examples'
+
+include 'spring-security-keycloak'
