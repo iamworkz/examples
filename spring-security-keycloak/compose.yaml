@@ -21,6 +21,4 @@ services:
     environment:
       POSTGRES_USER: keycloak
       POSTGRES_PASSWORD: keycloak
-      POSTGRES_DB: keycloak
-services:
-  
+      POSTGRES_DB: keycloak  
