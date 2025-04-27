@@ -656,7 +656,7 @@
     "fullScopeAllowed" : true,
     "nodeReRegistrationTimeout" : -1,
     "defaultClientScopes" : [ "web-origins", "acr", "profile", "roles", "basic", "email" ],
-    "optionalClientScopes" : [ "service_account", "address", "phone", "offline_access", "organization", "microprofile-jwt" ]
+    "optionalClientScopes" : [ "service_account", "address", "phone", "openid", "offline_access", "organization", "microprofile-jwt" ]
   } ],
   "clientScopes" : [ {
     "id" : "078f99c9-58c9-4346-8cb0-f11016dbe757",
@@ -1219,6 +1219,17 @@
       }
     } ]
   }, {
+    "id" : "fe1ab5aa-9f5d-4d4b-a9ea-d5493005f0fd",
+    "name" : "openid",
+    "description" : "",
+    "protocol" : "openid-connect",
+    "attributes" : {
+      "include.in.token.scope" : "true",
+      "display.on.consent.screen" : "true",
+      "gui.order" : "",
+      "consent.screen.text" : ""
+    }
+  }, {
     "id" : "78b102e8-f10f-41fd-a6d5-9eda26dbc175",
     "name" : "role_list",
     "description" : "SAML role list",
@@ -1284,7 +1295,7 @@
     } ]
   } ],
   "defaultDefaultClientScopes" : [ "role_list", "saml_organization", "profile", "email", "roles", "web-origins", "acr", "basic" ],
-  "defaultOptionalClientScopes" : [ "offline_access", "address", "phone", "microprofile-jwt", "organization" ],
+  "defaultOptionalClientScopes" : [ "offline_access", "address", "phone", "microprofile-jwt", "organization", "openid" ],
   "browserSecurityHeaders" : {
     "contentSecurityPolicyReportOnly" : "",
     "xContentTypeOptions" : "nosniff",
