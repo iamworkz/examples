@@ -1,0 +1,13 @@
+{
+  "realm": "timesheet",
+  "roles": {
+    "realm": [
+      {
+        "name": "admin"
+      },
+      {
+        "name": "employee"
+      }
+    ]
+  }
+}
