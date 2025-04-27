@@ -15,9 +15,8 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ./keycloak-realm-timesheet.json:/opt/keycloak/data/import/keycloak-realm-timesheet.json
-    command:
-      - "start-dev"
+      - ./keycloak/keycloak-realm-timesheet.json:/opt/keycloak/data/import/keycloak-realm-timesheet.json
+    command: "start-dev --import-realm"
 
   postgres:
     image: postgres:latest
