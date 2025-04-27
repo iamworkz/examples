@@ -1,3 +1,5 @@
+package com.iamworkz.spring_security_keycloak.domain;
+
 public class Employee {
     private long id;
     private String name;

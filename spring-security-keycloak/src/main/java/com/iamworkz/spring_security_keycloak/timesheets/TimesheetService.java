@@ -1,4 +1,4 @@
-package com.iamworkz.spring_security_keycloak.service;
+package com.iamworkz.spring_security_keycloak.timesheets;
 
 import com.iamworkz.spring_security_keycloak.domain.TimesheetEntry;
 import org.springframework.stereotype.Service;
@@ -39,5 +39,8 @@ public class TimesheetService {
         }
     }
 
-    
+
+    public Map<Long, Map<LocalDate, TimesheetEntry>> getTimesheets() {
+        return timesheets;
+    }
 }
